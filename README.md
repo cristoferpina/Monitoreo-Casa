@@ -61,7 +61,3 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```
 
-
-
-Proyecto localizado en `c:/Users/crist/OneDrive/Escritorio/Nueva carpeta/casa_inteligente`.
-Para dudas o ayuda, responde en el repositorio o contacta al autor del proyecto.
