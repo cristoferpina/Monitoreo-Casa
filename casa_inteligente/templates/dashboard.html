@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Dashboard Pro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>Mi Hogar</h1>
+            <p>Controla y monitorea tus dispositivos inteligentes</p>
+        </header>
+
+        <div class="grid-container">
+            <!-- Temperatura -->
+            <div class="card" data-status="on" id="temp-card">
+                <div class="card-icon">
+                    <i class="fas fa-temperature-high"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Temperatura</h3>
+                    <p>22°C</p>
+                </div>
+            </div>
+
+            <!-- Ventana emergente personalizada -->
+            <div id="custom-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.4); z-index:1000; align-items:center; justify-content:center;">
+                <div style="background:#fff; padding:2em; border-radius:10px; text-align:center; min-width:200px;">
+                    <h2 style="color:#333;">Hola</h2>
+                    <div style="margin-top:1.5em;">
+                        <button id="btn-si" style="background:#4CAF50; color:#fff; border:none; padding:0.5em 1.5em; border-radius:5px; margin-right:1em; cursor:pointer;">Sí</button>
+                        <button id="btn-no" style="background:#F44336; color:#fff; border:none; padding:0.5em 1.5em; border-radius:5px; cursor:pointer;">No</button>
+                    </div>
+                </div>
+            </div>
+            <script>
+            document.getElementById('temp-card').onclick = function() {
+                document.getElementById('custom-modal').style.display = 'flex';
+            };
+            document.getElementById('btn-si').onclick = function() {
+                document.getElementById('custom-modal').style.display = 'none';
+            };
+            document.getElementById('btn-no').onclick = function() {
+                document.getElementById('custom-modal').style.display = 'none';
+            };
+            </script>
+
+            <!-- Humedad de Ambiente -->
+            <div class="card" data-status="on">
+                <div class="card-icon">
+                    <i class="fas fa-tint"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Humedad Ambiente</h3>
+                    <p>60%</p>
+                </div>
+            </div>
+
+            <!-- Humedad del Suelo -->
+            <div class="card" data-status="on">
+                <div class="card-icon">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Humedad del Suelo</h3>
+                    <p>Óptima</p>
+                </div>
+            </div>
+
+            <!-- Luz Interior -->
+            <div class="card" data-status="on">
+                <div class="card-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Luz Interior</h3>
+                    <p>Encendida • 80%</p>
+                </div>
+            </div>
+
+            <!-- Luz Exterior -->
+            <div class="card" data-status="off">
+                <div class="card-icon">
+                    <i class="fas fa-sun"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Luz Exterior</h3>
+                    <p>Apagada</p>
+                </div>
+            </div>
+
+            <!-- Distancia a Puerta -->
+            <div class="card" data-status="on">
+                <div class="card-icon">
+                    <i class="fas fa-ruler-horizontal"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Distancia a Puerta</h3>
+                    <p>1.2 m</p>
+                </div>
+            </div>
+
+            <!-- Distancia al Agua -->
+            <div class="card" data-status="on">
+                <div class="card-icon">
+                    <i class="fas fa-ruler-vertical"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Distancia al Agua</h3>
+                    <p>0.8 m</p>
+                </div>
+            </div>
+
+            <!-- Porcentaje de Llenado -->
+            <div class="card" data-status="on">
+                <div class="card-icon">
+                    <i class="fas fa-glass-whiskey"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Llenado de Agua</h3>
+                    <p>75%</p>
+                </div>
+            </div>
+
+            <!-- Estado Bomba Hidráulica -->
+            <div class="card" data-status="on">
+                <div class="card-icon">
+                    <i class="fas fa-pump-soap"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Bomba Hidráulica</h3>
+                    <p>Operativa</p>
+                </div>
+            </div>
+
+            <!-- Estado de Iluminación -->
+            <div class="card" data-status="on">
+                <div class="card-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Iluminación</h3>
+                    <p>Automática</p>
+                </div>
+            </div>
+
+            <!-- Luces Salón -->
+            <div class="card" data-status="on">
+                <div class="card-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Luces Salón</h3>
+                    <p>Encendido • 75%</p>
+                </div>
+            </div>
+
+            <!-- Persiana Estudio -->
+            <div class="card" data-status="on">
+                <div class="card-icon">
+                    <i class="fas fa-sliders-h"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Persiana Estudio</h3>
+                    <p>50% Abierta</p>
+                </div>
+            </div>
+
+            <!-- Clima Habitación -->
+            <div class="card" data-status="on">
+                <div class="card-icon">
+                    <i class="fas fa-thermometer-half"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Clima Habitación</h3>
+                    <p>23°C • Auto</p>
+                </div>
+            </div>
+
+            <!-- Puerta Garaje -->
+            <div class="card" data-status="off">
+                <div class="card-icon">
+                    <i class="fas fa-door-open"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Puerta Garaje</h3>
+                    <p>Cerrada</p>
+                </div>
+            </div>
+
+            <!-- Nivel Tanque -->
+            <div class="card" data-status="on">
+                <div class="card-icon">
+                    <i class="fas fa-water"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Nivel Tanque</h3>
+                    <p>75% Lleno</p>
+                </div>
+            </div>
+
+            <!-- Jardín Frontal -->
+            <div class="card" data-status="on">
+                <div class="card-icon">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Jardín Frontal</h3>
+                    <p>Humedad Óptima</p>
+                </div>
+            </div>
+
+            <!-- Estación Meteo -->
+            <div class="card" data-status="on">
+                <div class="card-icon">
+                    <i class="fas fa-wind"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Estación Meteo</h3>
+                    <p>12 km/h NE</p>
+                </div>
+            </div>
+
+            <!-- Enchufe Cocina -->
+            <div class="card" data-status="off">
+                <div class="card-icon">
+                    <i class="fas fa-plug"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Enchufe Cocina</h3>
+                    <p>Apagado</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

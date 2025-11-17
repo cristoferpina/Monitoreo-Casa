@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Home Dashboard Pro</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="/css/login.css"/>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-card">
+      <div class="video-circular">
+        <video src="/video/video2.mp4" autoplay muted loop></video>
+      </div>
+      <h2>Iniciar Sesión</h2>
+      <form>
+        <label for="username"><i class="fas fa-user-circle"></i> Usuario</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password"><i class="fas fa-lock"></i> Contraseña</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Entrar</button>
+      </form>
+      <p style="margin-top: 1rem; font-size: 0.95rem;">
+        ¿No tienes cuenta?
+        <a href="/templates/record.html" style="color: var(--primary-color); text-decoration: none; font-weight: bold;">Regístrate</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Dashboard Pro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/trash/1.css"> <!-- Asumiendo que está en una carpeta css -->
+</head>
+<body>
+    <main class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>Mi Hogar</h1>
+            <p>Controla y monitorea tus dispositivos inteligentes</p>
+        </header>
+
+        <div class="grid-container">
+            <!-- Temperatura -->
+            <div class="card" data-status="on" role="button" tabindex="0">
+                <div class="card-icon" aria-hidden="true">
+                    <i class="fas fa-temperature-high"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Temperatura</h3>
+                    <p>22°C</p>
+                </div>
+            </div>
+
+            <!-- Humedad de Ambiente -->
+            <div class="card" data-status="on" role="button" tabindex="0">
+                <div class="card-icon" aria-hidden="true">
+                    <i class="fas fa-tint"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Humedad Ambiente</h3>
+                    <p>60%</p>
+                </div>
+            </div>
+
+            <!-- Humedad del Suelo -->
+            <div class="card" data-status="on" role="button" tabindex="0">
+                <div class="card-icon" aria-hidden="true">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Humedad del Suelo</h3>
+                    <p>Óptima</p>
+                </div>
+            </div>
+
+            <!-- Luz Interior -->
+            <div class="card" data-status="on" role="button" tabindex="0">
+                <div class="card-icon" aria-hidden="true">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Luz Interior</h3>
+                    <p>Encendida • 80%</p>
+                </div>
+            </div>
+
+            <!-- Luz Exterior -->
+            <div class="card" data-status="off" role="button" tabindex="0">
+                <div class="card-icon" aria-hidden="true">
+                    <i class="fas fa-sun"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Luz Exterior</h3>
+                    <p>Apagada</p>
+                </div>
+            </div>
+
+            <!-- Distancia a Puerta -->
+            <div class="card" data-status="on" role="button" tabindex="0">
+                <div class="card-icon" aria-hidden="true">
+                    <i class="fas fa-ruler-horizontal"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Distancia a Puerta</h3>
+                    <p>1.2 m</p>
+                </div>
+            </div>
+
+            <!-- Distancia al Agua -->
+            <div class="card" data-status="warning" role="button" tabindex="0"> <!-- Ejemplo con warning -->
+                <div class="card-icon" aria-hidden="true">
+                    <i class="fas fa-ruler-vertical"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Distancia al Agua</h3>
+                    <p>0.3 m (Nivel bajo)</p>
+                </div>
+            </div>
+
+            <!-- Porcentaje de Llenado -->
+            <div class="card" data-status="on" role="button" tabindex="0">
+                <div class="card-icon" aria-hidden="true">
+                    <i class="fas fa-glass-whiskey"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Llenado de Agua</h3>
+                    <p>75%</p>
+                </div>
+            </div>
+            
+            <!-- Más tarjetas (ejemplos) -->
+            <div class="card" data-status="off" role="button" tabindex="0">
+                <div class="card-icon" aria-hidden="true">
+                    <i class="fas fa-plug"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Enchufe Inteligente</h3>
+                    <p>Apagado</p>
+                </div>
+            </div>
+
+            <div class="card" data-status="warning" role="button" tabindex="0">
+                <div class="card-icon" aria-hidden="true">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="card-content">
+                    <h3>Seguridad</h3>
+                    <p>Ventana abierta</p>
+                </div>
+            </div>
+
+            <!-- Puedes seguir añadiendo más tarjetas como las anteriores -->
+            <!-- He acortado la lista para brevedad, puedes añadir todas las que necesites -->
+
+        </div>
+    </main>
+    <!-- Opcional: Script JS para manejar la interactividad de las tarjetas si es necesario -->
+    <!-- <script src="js/dashboard.js"></script> -->
+</body>
+</html>
