@@ -1,18 +1,28 @@
 <div align="center">
 
-# 🏠 Casa inteligente
+<sub>CRISTOFER PIÑA · DESARROLLO DE SOFTWARE</sub>
+
+# Casa inteligente
 
 Panel web para explorar las interfaces y recursos de monitoreo del hogar.
 
-**HTML · CSS · JavaScript**
+<img alt="HTML" src="https://img.shields.io/badge/HTML-0F172A?style=for-the-badge" />
+<img alt="CSS" src="https://img.shields.io/badge/CSS-1D4ED8?style=for-the-badge" />
+<img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-0F766E?style=for-the-badge" />
 
-[Explorar código](https://github.com/cristoferpina/Monitoreo-Casa) · [Reportar un problema](https://github.com/cristoferpina/Monitoreo-Casa/issues)
+[Código fuente](https://github.com/cristoferpina/Monitoreo-Casa) &nbsp; / &nbsp; [Incidencias](https://github.com/cristoferpina/Monitoreo-Casa/issues) &nbsp; / &nbsp; [Perfil](https://github.com/cristoferpina)
 
 </div>
 
 ---
 
+[Qué incluye](#seccion-1) · [Objetivo](#seccion-2) · [Estructura del repositorio](#seccion-3) · [Cómo probar (modo estático)](#seccion-4) · [Uso con backend (opcional)](#seccion-5)
+
+---
+
 Proyecto web para visualización y monitoreo de una "casa inteligente". Contiene las vistas, estilos y recursos estáticos necesarios para un panel de control (dashboard), interfaz de inicio de sesión y páginas de registro/monitoreo.
+
+<a id="seccion-1"></a>
 
 ## Qué incluye
 
@@ -22,6 +32,8 @@ Proyecto web para visualización y monitoreo de una "casa inteligente". Contiene
 - **Código cliente:** carpeta `js/` para scripts de frontend.
 - **Módulos de monitoreo:** carpeta `monitoreo/` para recursos relacionados con la captura o visualización de datos de sensores.
 
+<a id="seccion-2"></a>
+
 ## Objetivo
 
 Proveer una interfaz sencilla para:
@@ -30,6 +42,8 @@ Proveer una interfaz sencilla para:
 - Visualizar el estado y métricas de la casa (panel en `dashboard.html`).
 - Revisar y reproducir registros o grabaciones (`record.html` y `video/`).
 - Servir como base para integrar lógica backend (por ejemplo, una API en Flask o Node) que alimente las vistas con datos en tiempo real.
+
+<a id="seccion-3"></a>
 
 ## Estructura del repositorio
 
@@ -41,6 +55,8 @@ Proveer una interfaz sencilla para:
 - `monitoreo/` — Código o datos relacionados con el monitoreo.
 - `static/` — Recursos estáticos adicionales.
 
+<a id="seccion-4"></a>
+
 ## Cómo probar (modo estático)
 
 Si sólo quieres abrir y revisar las páginas estáticas localmente, puedes abrir los archivos HTML con el navegador o iniciar un servidor HTTP simple:
@@ -51,6 +67,8 @@ cd casa_inteligente
 python -m http.server 8000
 # Abrir en el navegador: http://localhost:8000/templates/dashboard.html
 ```
+
+<a id="seccion-5"></a>
 
 ## Uso con backend (opcional)
 
@@ -72,3 +90,9 @@ def dashboard():
 if __name__ == '__main__':
     app.run(debug=True)
 ```
+
+---
+
+<div align="center">
+<sub>Desarrollado por <a href="https://github.com/cristoferpina">Cristofer Piña</a></sub>
+</div>
