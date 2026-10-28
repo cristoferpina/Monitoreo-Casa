@@ -4,7 +4,9 @@
 
 # Casa inteligente
 
-Panel web para explorar las interfaces y recursos de monitoreo del hogar.
+**El hogar, desde un panel de control.**
+
+Interfaces para consultar el estado de una casa inteligente y explorar sus registros de monitoreo.
 
 <img alt="HTML" src="https://img.shields.io/badge/HTML-0F172A?style=for-the-badge" />
 <img alt="CSS" src="https://img.shields.io/badge/CSS-1D4ED8?style=for-the-badge" />
@@ -13,6 +15,17 @@ Panel web para explorar las interfaces y recursos de monitoreo del hogar.
 [Código fuente](https://github.com/cristoferpina/Monitoreo-Casa) &nbsp; / &nbsp; [Incidencias](https://github.com/cristoferpina/Monitoreo-Casa/issues) &nbsp; / &nbsp; [Perfil](https://github.com/cristoferpina)
 
 </div>
+
+## Una mirada al proyecto
+
+| Qué encontrarás | Por qué explorarlo |
+| --- | --- |
+| El hogar, desde un panel de control. | Interfaces para consultar el estado de una casa inteligente y explorar sus registros de monitoreo. |
+| Trabajo de desarrollo | Diseño de un dashboard, pantallas de acceso y organización de recursos de una interfaz web. |
+
+**[Explora las pantallas y recursos →](casa_inteligente/)**
+
+
 
 ---
 
