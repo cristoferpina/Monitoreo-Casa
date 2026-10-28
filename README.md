@@ -1,4 +1,16 @@
-# Casa Inteligente
+<div align="center">
+
+# 🏠 Casa inteligente
+
+Panel web para explorar las interfaces y recursos de monitoreo del hogar.
+
+**HTML · CSS · JavaScript**
+
+[Explorar código](https://github.com/cristoferpina/Monitoreo-Casa) · [Reportar un problema](https://github.com/cristoferpina/Monitoreo-Casa/issues)
+
+</div>
+
+---
 
 Proyecto web para visualización y monitoreo de una "casa inteligente". Contiene las vistas, estilos y recursos estáticos necesarios para un panel de control (dashboard), interfaz de inicio de sesión y páginas de registro/monitoreo.
 
@@ -35,7 +47,7 @@ Si sólo quieres abrir y revisar las páginas estáticas localmente, puedes abri
 
 ```powershell
 # Desde la raíz del proyecto (Windows PowerShell)
-cd "c:\Users\crist\OneDrive\Escritorio\Nueva carpeta\casa_inteligente"
+cd casa_inteligente
 python -m http.server 8000
 # Abrir en el navegador: http://localhost:8000/templates/dashboard.html
 ```
@@ -60,4 +72,3 @@ def dashboard():
 if __name__ == '__main__':
     app.run(debug=True)
 ```
-
